@@ -1,0 +1,168 @@
+body {
+    background-color: rgba(29, 29, 29, 0.7);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    background-image: url("/images/carina\ nebula.jfif");
+    background-blend-mode:overlay;
+
+}
+
+.game-over-box {
+    background-color: rgba(224, 222, 222, 0.37);
+    border: 2px solid lightgray;
+
+    position:absolute;
+    /* height: 100px; */
+    width: 250px;
+    margin-top: 200px;
+    font-size: 1.8em;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+
+    line-height: 50px;
+    /*the same as your div height */
+
+
+    padding: 15px;
+}
+
+#explosion-img {
+    width:50px;
+    height: 50px;
+    opacity: 0.6;
+}
+
+#sry {
+    font-size: 0.7em;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 10px;
+
+}
+
+#header {
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 545px;
+    height: 100px;
+    /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-size: larger;
+    font-family: 'Orbitron', sans-serif;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.middle-text-div {
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    /* flex-direction: column; */
+    row-gap: 10px;
+    margin: 0px;
+    padding: 0px;    
+}
+
+#space-snake {
+    font-style: italic;
+}
+
+h3 {
+    color: lightgray;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.grid {
+    display: flex;    
+    flex-wrap: wrap;
+    width: 560px;
+    height: 560px;
+    border: solid lightgray;
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.apple {
+    background-color: yellow;   
+    border: 5px solid red;
+    box-sizing: border-box;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.wall {
+    background-color: darkblue;
+}
+
+.empty {
+    background-color:rgb(255, 255, 255, 0.2);
+    /* background: rgba(0,0,0,0.2) */
+    /* opacity: 0.2; */
+}
+
+
+.snake {
+    /* background-color: silver; */
+    background-color: rgba(224, 222, 222, 0.952);
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.dead-snake {
+    /* background-color: silver; */
+    background-color: rgba(216, 78, 60, 0.952);
+    border-radius: 5px;
+    opacity: 1;
+}
+
+
+.fa-user-astronaut {
+    color:white;
+}
+
+.fa-sun {
+    color: rgb(253, 183, 77);
+    font-size: 1.3em
+}
+
+.astronaut-bg {
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-again {
+    background-color: rgba(224, 222, 222, 0.37);
+    border: 2px solid lightgray;
+
+    position:absolute;
+    padding: 10px;
+    margin-top: 500px;
+
+    font-style: italic;
+    font-size: 1.2em;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+
+    line-height: 20px;
+
+}
+
+.play-again:hover {
+    background-color: rgba(239, 116, 75, 0.37);
+}
+
+.play-again:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6);
+}
