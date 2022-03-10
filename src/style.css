@@ -166,3 +166,57 @@ h3 {
 .play-again:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6);
 }
+
+.game-pad {
+    background-color: rgba(224, 222, 222, 0.37);
+    border: 2px solid lightgray;
+
+    height: 72px;
+    width: 72px;
+
+    position:absolute;
+    padding: 10px;
+    margin-top: 500px;
+
+    /* font-style: italic; */
+    font-size: 2.5em;
+    font-family: 'Orbitron', sans-serif;
+    /* font-weight: bold; */
+    text-align: center;
+    vertical-align: middle;
+
+    /* line-height: 20px; */
+
+}
+
+.game-pad:hover {
+    background-color: rgba(239, 116, 75, 0.37);
+}
+
+.game-pad:active {
+    box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6);
+}
+
+#game-pad-left-id {
+    margin-top: 800px;
+    margin-left: -195px;
+}
+
+#game-pad-up-id {
+    margin-top: 700px;
+    margin-left: 0px;
+}
+
+#game-pad-right-id {
+    margin-top: 800px;
+    margin-left: 195px;
+}
+
+#game-pad-down-id {
+    margin-top: 900px;
+    margin-left: 0px;
+}
+
+.score-h3 {
+    margin-left: 450px;
+}

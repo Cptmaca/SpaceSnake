@@ -24,6 +24,14 @@ document.addEventListener("DOMContentLoaded", () => {
     grid.style.width = width * gridCellWidth + "px"
     grid.style.height = width * gridCellWidth + "px"
 
+
+    //for the game pad
+    let gamepadLeft = document.getElementById("game-pad-left-id")
+    let gamepadUp = document.getElementById("game-pad-up-id")
+    let gamepadRight = document.getElementById("game-pad-right-id")
+    let gamepadDown = document.getElementById("game-pad-down-id")
+    
+
     //for the game over div
     let gameOverBox = document.getElementById("game-over-box-id")
     let playAgainBox = document.getElementById("play-again-id")
@@ -204,6 +212,10 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("inside game over")
         isGameOver = true
         clearInterval(intervalID)
+        gamepadLeft.removeEventListener("click", () => {directionInput(37);})
+        gamepadUp.removeEventListener("click", () => {directionInput(38);})
+        gamepadRight.removeEventListener("click", () => {directionInput(39);})
+        gamepadDown.removeEventListener("click", () => {directionInput(40);})
         document.removeEventListener('keyup', directionInput)
         const refreshPage = () => { location.reload(); }
         setTimeout(function () {
@@ -325,7 +337,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // }
 
     function directionInput(e) {
-        switch (e.keyCode) {
+        switch (e.keyCode || e) {
             case 37:
                 inputDirection = left
                 break
@@ -339,7 +351,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 inputDirection = down
                 break
         }
+
     }
 
+
+    gamepadLeft.addEventListener("click", () => {directionInput(37);})
+    gamepadUp.addEventListener("click", () => {directionInput(38);})
+    gamepadRight.addEventListener("click", () => {directionInput(39);})
+    gamepadDown.addEventListener("click", () => {directionInput(40);})
     document.addEventListener("keyup", directionInput)
 })
