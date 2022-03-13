@@ -113,7 +113,7 @@ h3 {
     /* background-color: silver; */
     /* background-color: rgba(224, 224, 75, 0.781); */
 
-    background-image: radial-gradient(silver 10%, purple 90%);
+    background-image: radial-gradient(rgb(151, 147, 147) 10%, purple 90%);
 
     border-radius: 5px;
     opacity: 1;
@@ -122,7 +122,7 @@ h3 {
 .dead-snake {
     /* background-color: silver; */
     /* background-color: rgba(216, 78, 60, 0.952); */
-    background-image: radial-gradient(red 10%, purple 90%);
+    background-image: radial-gradient(rgba(250, 1, 1, 0.938) 10%, rgb(124, 1, 124) 90%);
     border-radius: 5px;
     opacity: 1;
 }
