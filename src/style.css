@@ -238,15 +238,16 @@ h3 {
 }
 
 .score-h3 {
-    margin-left: 430px;
+    margin-left: 400px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    align-content: space-between;
+    align-content: space-around;
     gap: 5px;
     padding: 0px;
+    font-family: 'Orbitron', sans-serif;
 }
 
 #score {
-    font-size: 2.5em;
+    font-size: 2.2em;
 }
