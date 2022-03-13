@@ -238,5 +238,15 @@ h3 {
 }
 
 .score-h3 {
-    margin-left: 450px;
+    margin-left: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    gap: 5px;
+    padding: 0px;
+}
+
+#score {
+    font-size: 2.5em;
 }
