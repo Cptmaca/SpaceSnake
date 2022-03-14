@@ -47,6 +47,11 @@ function viewportScale() {
 
     // var txt = "Page size: width=" + Math.floor(w*0.57) + ", height=" + Math.floor(h*0.57);
     // document.getElementById("demo").innerHTML = txt;
+
+
+    //this scrolls bottom gamepad button into view
+    let elmnt = document.getElementById("game-pad-down-id");
+    elmnt.scrollIntoView();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
