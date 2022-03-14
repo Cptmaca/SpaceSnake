@@ -252,6 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // this function ends the game
     function gameOver() {
         console.log("inside game over")
+        window.navigator.vibrate(400);
         isGameOver = true
         clearInterval(intervalID)
         gamepadLeft.removeEventListener("click", () => {directionInput(37);})
@@ -263,7 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(function () {
             gameOverBox.style.display = "block";            
         }, 500)
-        window.navigator.vibrate([200, 100, 200, 100, 200]);
+        
         setTimeout(function () {
             playAgainBox.style.display = "block";
         }, 1500)
