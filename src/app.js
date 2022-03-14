@@ -261,9 +261,9 @@ document.addEventListener("DOMContentLoaded", () => {
         document.removeEventListener('keyup', directionInput)
         const refreshPage = () => { location.reload(); }
         setTimeout(function () {
-            gameOverBox.style.display = "block";
-            window.navigator.vibrate([200, 100, 200, 100, 200]);
+            gameOverBox.style.display = "block";            
         }, 500)
+        window.navigator.vibrate([200, 100, 200, 100, 200]);
         setTimeout(function () {
             playAgainBox.style.display = "block";
         }, 1500)
