@@ -25,7 +25,7 @@ function viewportScale() {
     let currentScale = Number(currentScaleString);
     // console.log("currentScale: ", currentScale);
 
-
+    window.navigator.vibrate(400);
 
 
     if(window.innerWidth !== undefined && window.innerHeight !== undefined) { 
