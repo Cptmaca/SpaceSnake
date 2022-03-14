@@ -7,7 +7,7 @@
     <!-- <link rel=”icon" href="images/sparkles_2728.png"> -->
     <link href="./images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-    <meta name="viewport" content="width=320, user-scalable=no, initial-scale=0.57">
+    <meta id="myViewport" name="viewport" content="user-scalable=no, initial-scale=0.57">
 
     <title>Space Snake 🐍</title>
     <meta name="description" content="Ad Astra!" />
@@ -26,7 +26,7 @@
     <script src="https://kit.fontawesome.com/54e1f5844d.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onresize="viewportScale()" onload="viewportScale()">
     <div class="game-over-box" id="game-over-box-id">
         <div>GAME OVER</div>
         <div><img src="./images/explosion-emoticon-clip-art-explosion-icon-png.png" id="explosion-img"></img></div>

@@ -11,6 +11,47 @@
 
 // cookies for player name in session
 
+
+//this function scales the viewport dynamically
+// it reads the initial viewport scale and the sreen width, and
+//calculates screen width. Then it sets the correct scale
+//considering screen width and 560px that is the game grid width
+//scale has to have 2 decimal places
+function viewportScale() {
+    const viewport = document.getElementById("myViewport") 
+    let currentViewportAttribute = viewport.getAttribute("content");
+    // console.log(currentViewportAttribute);
+    let currentScaleString = currentViewportAttribute.slice(currentViewportAttribute.length-4, currentViewportAttribute.length);
+    let currentScale = Number(currentScaleString);
+    // console.log("currentScale: ", currentScale);
+
+
+
+
+    if(window.innerWidth !== undefined && window.innerHeight !== undefined) { 
+        var w = window.innerWidth;
+        var h = window.innerHeight;
+    } else {  
+        var w = document.documentElement.clientWidth;
+        var h = document.documentElement.clientHeight;
+    }
+
+    let realW = w*currentScale;
+    let realH = h*currentScale;
+    let newScale = Math.floor(realW / 560 / 1.1 * 100) /100;
+    console.log("newScale: ", newScale);
+
+    let newViewportAttribute = "user-scalable=no, initial-scale=" + newScale;
+    // console.log("new attr", newViewportAttribute);
+
+    viewport.setAttribute('content', newViewportAttribute);
+
+    // console.log("real w, h: ", w*currentScale, h*currentScale);
+
+    // var txt = "Page size: width=" + Math.floor(w*0.57) + ", height=" + Math.floor(h*0.57);
+    // document.getElementById("demo").innerHTML = txt;
+}
+
 document.addEventListener("DOMContentLoaded", () => {
 
     const grid = document.querySelector(".grid")
@@ -23,6 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     grid.style.width = width * gridCellWidth + "px"
     grid.style.height = width * gridCellWidth + "px"
+
 
 
     //for the game pad
@@ -360,4 +402,6 @@ document.addEventListener("DOMContentLoaded", () => {
     gamepadRight.addEventListener("click", () => {directionInput(39);})
     gamepadDown.addEventListener("click", () => {directionInput(40);})
     document.addEventListener("keyup", directionInput)
+
+
 })
