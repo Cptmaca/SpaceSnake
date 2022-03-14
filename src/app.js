@@ -262,7 +262,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const refreshPage = () => { location.reload(); }
         setTimeout(function () {
             gameOverBox.style.display = "block";
-            window.navigator.vibrate([200, 100, 200, 100, 200])
+            window.navigator.vibrate([200, 100, 200, 100, 200]);
         }, 500)
         setTimeout(function () {
             playAgainBox.style.display = "block";
