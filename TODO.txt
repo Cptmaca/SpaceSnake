@@ -1,1 +1,6 @@
-fixed width on mobile
+// TODO:
+// high scores and player names (and tracking who played, when etc.) - hidden anon button (on the astronaut below)
+// crazy big snake game mode (start length)
+// add sounds
+//instead of px, use some relative sizing for headers etc, so you can change them all by a single parameter
+// cookies for player name in session

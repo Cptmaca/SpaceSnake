@@ -1,17 +1,3 @@
-// TODO:
-// high scores and player names (and tracking who played, when etc.) - hidden anon button (on the astronaut below)
-// legenda explicativa controles (arrows up down etc.) - pode já colocar as setas como botôes de controle para mobile. talvez alterar width tb
-// host online
-// crazy big snake game mode (start length)
-// add sounds
-//resize design componentes (header, text etc.) to be relative, and fit in a mobile screen (or even desktop screen). It is too big right now.
-//instead of px, use some relative sizing for headers etc, so you can change them all by a single parameter
-//  fix the black border corners in the snake
-// identify the carina nebula credits
-
-// cookies for player name in session
-
-
 //this function scales the viewport dynamically
 // it reads the initial viewport scale and the sreen width, and
 //calculates screen width. Then it sets the correct scale

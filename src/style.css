@@ -246,7 +246,7 @@ h3 {
     gap: 5px;
     padding: 0px;
     font-family: 'Orbitron', sans-serif;
-    
+
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -258,3 +258,41 @@ h3 {
 #score {
     font-size: 2.2em;
 }
+
+.footnote {
+    color: rgba(255, 255, 255, 0.582);
+    font-size: 0.7rem;
+    font-family: sans-serif;
+    margin-top: 205px;
+    /* width: 300px; */
+
+    margin-right: 370px;
+    display: flex;
+    flex-wrap: nowrap; 
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+/* 
+.footnote:link {
+    text-decoration: none;
+}
+
+.footnote:visited {
+    text-decoration: none;
+}
+
+.footnote:hover {
+    text-decoration: underline;
+    background-color: rgba(239, 116, 75, 0.37);
+}
+
+.footnote:active {
+    text-decoration: underline;
+    background-color: rgba(239, 116, 75, 0.37);
+} */
