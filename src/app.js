@@ -53,6 +53,11 @@ document.addEventListener("DOMContentLoaded", () => {
     grid.style.width = width * gridCellWidth + "px"
     grid.style.height = width * gridCellWidth + "px"
 
+    //audio
+    let isSoundOn = true;
+    const audioGameOver = document.getElementById("audio-game-over");
+    const audioBleep = document.getElementById("audio-bleep");
+    const audioStart = document.getElementById("audio-start");
 
 
     //for the game pad
@@ -149,6 +154,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         }
 
+        if (isSoundOn) {audioStart.play();}
+
     }
 
     createBoard()
@@ -240,6 +247,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // this function ends the game
     function gameOver() {
         console.log("inside game over")
+        if (isSoundOn) {audioGameOver.play();}
         window.navigator.vibrate(400);
         isGameOver = true
         clearInterval(intervalID)
@@ -350,6 +358,7 @@ document.addEventListener("DOMContentLoaded", () => {
             squares[apples[apples.length - 1]].innerHTML = '<i class="fas fas fa-sun" color="white"></i>'
             score += 1
             scoreDisplay.innerHTML = score
+            if (isSoundOn) {audioBleep.play();}
         }
 
         // do not remove tail if enlarge == true

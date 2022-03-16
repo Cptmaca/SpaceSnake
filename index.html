@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8">
 
+    <!-- Music from <a href="https://pixabay.com/music/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=music&amp;utm_content=14423">Pixabay</a> -->
+
     <!-- these are for whatsapp link sharing info and thumbnail -->
     <meta property="og:title" content="Space Snake 🐍" /> 
     <meta property="og:type" content="website" />
@@ -57,6 +59,16 @@
 </head>
 
 <body onresize="viewportScale()" onload="viewportScale()">
+    <audio id="audio-game-over">
+        <source src="./audio/game-over-arcade-6435.mp3" type="audio/mpeg">        
+    </audio>
+    <audio id="audio-bleep">
+        <source src="./audio/game-ui-sounds-14857-eat-apple.mp3" type="audio/mpeg">        
+    </audio>
+    <audio id="audio-start">
+        <source src="./audio/success-1-6297.mp3" type="audio/mpeg">        
+    </audio>
+
     <div class="game-over-box" id="game-over-box-id">
         <div>GAME OVER</div>
         <div><img src="./images/explosion-emoticon-clip-art-explosion-icon-png.png" id="explosion-img"></img></div>
